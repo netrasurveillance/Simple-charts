@@ -1,7 +1,8 @@
 var dvc = {
   "essential" : {
           //data to use for chart
-          "graphic_data_url": "data.csv",
+          "graphic_data_url": "machine_analysis.csv",
+          "graphic_data_url1": "machine_analysis_agg.csv",
           //chart colour
           "colour_palette": [ "#206095" ],
           "negative_colour":["#118C7B"],
@@ -10,7 +11,7 @@ var dvc = {
           //Set alternative screenreader text if more detail than default is needed
           "screenreadertext":"",
           //Source
-          "sourceText":["Labour Market Statistics, February 2015, Table A02"],
+          "sourceText":["Non-working hours Analysis"],
           //desktop annotations (double space for new line)
           "annotationChart": [
           //    "Lorem ipsum  dolor sit amet",
@@ -32,9 +33,9 @@ var dvc = {
               // "middle"
           ],
           //y axis label
-          "yAxisLabel":"%",
+          "yAxisLabel":"hours of stopping",
           //y axis scale ("auto_zero_max", "auto_min_max" or custom e.g. [-3,5])
-          "yAxisScale":["auto_min_max"],
+          "yAxisScale":["auto_zero_max"],
           //set y axis break to true if y axis dosen't start at 0 and doesn't contain negative values
           //this enables the x axis to be dropped
           "yAxisBreak": false,
@@ -43,9 +44,9 @@ var dvc = {
   },
   "optional" : {
           //specifies margins at different window sizes
-          "margin_sm": [20, 10, 55, 30],
-          "margin_md": [20, 10, 45, 30],
-          "margin_lg": [20, 10, 45, 30],
+          "margin_sm": [20, 20, 105, 40],
+          "margin_md": [20, 20, 105, 40],
+          "margin_lg": [20, 20, 105, 40],
           //specifies aspect ratio of chart at different window sizes
           "aspectRatio_sm" : [16,13],
           "aspectRatio_md" : [16,12],
