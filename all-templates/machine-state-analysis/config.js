@@ -33,7 +33,8 @@ var dvc = {
               // "middle"
           ],
           //y axis label
-          "yAxisLabel":"hours of stopping",
+          "yAxisLabel":"hours of stopping per machine (today)",
+          "yAxisLabel1":"hours of stopping, together (weekly)",
           //y axis scale ("auto_zero_max", "auto_min_max" or custom e.g. [-3,5])
           "yAxisScale":["auto_zero_max"],
           //set y axis break to true if y axis dosen't start at 0 and doesn't contain negative values
